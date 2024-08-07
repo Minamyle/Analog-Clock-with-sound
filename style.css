@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+.clock{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  margin: 150px auto;
+}
+
+.center-of-clock{
+ position: absolute;
+ inset: 0;
+ margin: auto;
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ background-color: black;
+
+}
+.seconds-hand, .minutes-hand, .hours-hand {
+    position: absolute;
+    height: 50%;
+    inset: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: bottom;
+
+    
+}
+
+:is(.seconds-hand, .minutes-hand, .hours-hand) span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.seconds-hand{
+    /* padding-top: 20px; */
+    width: 1px;
+    /* transform: rotate(30deg); */
+
+}
+
+.minutes-hand{
+/* padding-top: 10px; */
+width: 3px;
+/* transform: rotate(10deg); */
+}
+
+.hours-hand{
+/* padding-top: 0px; */
+width: 5px;
+/* transform: rotate(180deg); */
+}
+
+.seconds-hand span {
+
+ background-color: rgb(134, 92, 14);
+
+}
+.hours-hand span {
+ background-color: rgb(70, 234, 70);
+}
+.minutes-hand span{
+background-color: rgb(31, 167, 212);
+}
+.clock-background{
+    position: absolute;
+    inset: 0;
+    transform: scale(1.2);
+    margin-left: -4rem;
+    margin-bottom: -40em;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
